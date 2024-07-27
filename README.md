@@ -1,6 +1,6 @@
 <h1>Stack Data Structure<h1>
 
-  <p>Stack is a data structure to store data and follows the property of LIFO (Last In First Out).<p>
+  <p>Stack is a data structure to store data and follows the property of LIFO (Last In First Out).</p>
 
 Following operations can be performed on the stack data structure: 
 
