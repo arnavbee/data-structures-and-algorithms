@@ -7,17 +7,14 @@ int main() {
     stack<int> s;
 
     s.push(2);
+      s.pop();
     s.push(3);
 
-    s.pop();
+  
 
     cout<<s.top()<<endl;
 
     s.pop();
-
-    
-
-
 
     if(s.empty()){
         cout<<"Stack is empty"<<endl;
