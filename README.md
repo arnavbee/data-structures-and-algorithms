@@ -55,8 +55,7 @@ Basic flow of the stack using array
 
 ## Question Links
 
-Implementing Two Stacks: https://www.naukri.com/code360/problems/two-stacks_983634?leftPanelTab=0%3Fsource%3Dyoutube&campaign=YouTube_CodestudioLovebabbar5thfeb&utm_source=youtube&utm_medium=affiliate&utm_campaign=YouTube_CodestudioLovebabbar5thfeb&count=25&page=1&search=&sort_entity=order&sort_order=ASC
- 
+Implementing Two Stacks: https://www.naukri.com/code360/problems/two-stacks_983634
 
 
 
