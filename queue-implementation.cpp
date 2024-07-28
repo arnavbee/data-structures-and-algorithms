@@ -1,10 +1,7 @@
-# Queue
+#include<iostream>
 
-Queue is the type of data structure used to store data in the form of FIFO(First In First Out)
+using namespace std;
 
-It has the same operations as stacks but the first element gets picked out first in the pop operation.
-
-## Implementation Of Queue using Array
 
 class Queue {
     public:
@@ -71,20 +68,26 @@ class Queue {
         cout<< arr[start]<<endl;
     }
 
+    int sizeOf() {
+        return size;
+    }
+
 
 };
 
 
 int main(){
 
-  Queue qt(5);
+  Queue qt(7);
 
   qt.push(4);
   qt.push(5);
   qt.push(6);
   qt.push(7);
 
-  qt.top(); // answer is 4
+  qt.top();
+
+  cout<<qt.sizeOf()<<endl;
 
 }
 

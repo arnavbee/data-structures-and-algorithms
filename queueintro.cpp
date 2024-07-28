@@ -7,7 +7,7 @@ using namespace std;
 
 int main(){
 
-Queue<int> r;
+
 
 
 }
