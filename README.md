@@ -14,4 +14,47 @@ Stack Implementation using class can be done in two ways:
 - Array
 - Linked List
 
+## Stack Implementation Using Class
+
+Basic flow of the stack using array
+
+    class Stack {
+     
+    // properties
+     
+    public: 
+    int *arr; 
+    int top; 
+    int size; 
+    
+    //behaviour - constructor
+     
+    Stack(int size) { 
+    this -> size = size; 
+    arr = new int[size]; 
+    top = -1; 
+    } 
+    
+    void push(int element){ 
+    
+    } 
+    
+    void pop(){
+    
+     } 
+     
+     int peek(){ 
+     
+     } 
+     
+     bool isEmpty(){ 
+     
+     } 
+     };
+
+ 
+
+
+
+
 
