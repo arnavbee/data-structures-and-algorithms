@@ -122,6 +122,105 @@ public:
 };
 
 
+## Implementing Queue using Two Stacks 
+
+Create two stacks s1 and s2.
+
+Code follows the basic flow of three steps:
+
+- s1 -> s2
+- x -> s1
+- s2 -> s1
+
+### Time Complexity - O(n)
+
+class MyQueue {
+public:
+     stack<int> s1, s2;
+    
+    void push(int x) {
+
+        while(s1.size()){
+            s2.push(s1.top());
+            s1.pop();
+        }
+
+        s1.push(x);
+
+        while(s2.size()){
+            s1.push(s2.top());
+            s2.pop();
+        }
+        
+    }
+    
+    int pop() {
+
+    int popp = s1.top();
+    s1.pop();
+    return popp;
+    
+        
+    }
+    
+    int peek() {
+    int popp = s1.top();
+    return popp;
+    
+        
+    }
+    
+    bool empty() {
+    if(s1.empty() && s2.empty()){
+        return true;
+    }
+
+    else return false;
+        
+    }
+};
+
+
+### Time Complexity - O(1)
+
+class MyQueue {
+public:
+    stack<int> s1, s2;
+
+    void push(int x) {
+        s1.push(x);
+    }
+    
+    int pop() {
+        if (s2.empty()) {
+            while (!s1.empty()) {
+                s2.push(s1.top());
+                s1.pop();
+            }
+        }
+        int top = s2.top();
+        s2.pop();
+        return top;
+    }
+    
+    int peek() {
+        if (s2.empty()) {
+            while (!s1.empty()) {
+                s2.push(s1.top());
+                s1.pop();
+            }
+        }
+        return s2.top();
+    }
+    
+    bool empty() {
+        return s1.empty() && s2.empty();
+    }
+};
+
+
+
+
 
 
 
