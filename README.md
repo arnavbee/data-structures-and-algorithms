@@ -123,6 +123,7 @@ public:
 
 
 ## Implementing Queue using Two Stacks 
+(https://leetcode.com/problems/implement-queue-using-stacks/description/)
 
 Create two stacks s1 and s2.
 
