@@ -82,8 +82,6 @@ class Stack {
         st.push(46);
 
 
-        st.pop();
-
         cout<<st.peek()<<endl;
 
     }
