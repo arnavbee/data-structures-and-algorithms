@@ -304,6 +304,125 @@ public:
 };
 
 
+### Minimum Stack
+
+Code:
+
+#include <stack>
+#include <limits>
+
+class MinStack {
+public:
+    std::stack<int> st;
+    std::stack<int> minStack;
+
+    MinStack() {
+    }
+    
+    void push(int val) {
+        st.push(val);
+
+        if (minStack.empty() || val <= minStack.top()) {
+            minStack.push(val);
+        }
+    }
+    
+    void pop() {
+        if (st.empty()) return;
+
+        int topElem = st.top();
+        st.pop();
+
+        if (topElem == minStack.top()) {
+            minStack.pop();
+        }
+    }
+    
+    int top() {
+        if (st.empty()) return -1; 
+        return st.top();
+    }
+    
+    int getMin() {
+        if (minStack.empty()) return -1; 
+        return minStack.top();
+    }
+};
+
+
+
+Alternate Solution:
+
+class MinStack {
+public:
+
+int minEle;
+
+stack<int> st;
+
+
+    MinStack() {
+        
+    }
+    
+    void push(int val) {
+        if(st.size() == 0){
+            st.push(val);
+            minEle = val;
+        }
+
+        else {
+            if(val >= minEle){
+                st.push(val);
+            }
+
+            else if(val < minEle){
+                st.push(2 * val - minEle);
+                minEle = val;
+            }
+        }
+        
+    }
+    
+    void pop() {
+
+        if(st.size() == 0)
+        return;
+
+        else {
+            if(st.top() > minEle){
+                st.pop();
+            }
+
+            else if(st.top() <= minEle){
+                minEle = 2 * minEle - st.top();
+                st.pop();
+            }
+        }
+        
+    }
+    
+    int top() {
+
+        int topp = st.top();
+        return topp;
+        
+    }
+    
+    int getMin() {
+
+        if(st.size() == 0){
+            return minEle;
+        }
+
+        else return minEle;
+
+
+        
+    }
+};
+
+
 
 
 
