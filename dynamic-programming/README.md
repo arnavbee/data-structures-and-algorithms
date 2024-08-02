@@ -1,5 +1,18 @@
 # Dynamic Programming
 
+Dynamic programming, like the divide-and-conquer method, solves problems by combining the solutions to subproblems.
+
+A dynamic-programming algorithm solves each subsubproblem just once and then saves its answer in a table, thereby avoiding the work of recomputing the answer every time it solves each subsubproblem.
+
+We typically apply dynamic programming to optimization problems. Such prob- lems can have many possible solutions. Each solution has a value, and we wish to find a solution with the optimal (minimum or maximum) value.
+
+When developing a dynamic-programming algorithm, we follow a sequence of four steps:
+
+1. Characterize the structure of an optimalsolution.
+2. Recursively define the value of an optimalsolution.
+3. Compute the value of an optimal solution,typically in a bottom-up fashion.
+4. Construct an optimal solution from computed information.
+
 ## Fibonacci
 
 
