@@ -38,7 +38,7 @@ public:
 };`
 
 
-Approach 2:
+Approach 2: Bottoms Up
 
 `#include <vector>
 
@@ -62,4 +62,6 @@ public:
         return dp[n];
     }
 };`
+
+
 
