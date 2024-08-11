@@ -24,7 +24,7 @@
 //     }
 
 //     bool wordBreak(string s, vector<string>& wordDict) {
-//         n = s.length();
+//         n = s.length();;
 
 //         wordSet = unordered_set<string>(wordDict.begin(), wordDict.end());
 
