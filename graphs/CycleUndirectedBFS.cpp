@@ -1,4 +1,10 @@
+#include <vector>
+using namespace std;
+
+
 // Function to detect a cycle starting from the source node 'src'.
+
+
 bool detect(int src, vector<int> adj[], int vis[]) {
     // Mark the current node as visited.
     vis[src] = 1;
