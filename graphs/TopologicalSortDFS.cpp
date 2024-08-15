@@ -1,3 +1,25 @@
+// Topological Sorting Overview:
+Topological Sorting is a linear ordering of vertices in a directed acyclic graph (DAG) such that for every directed edge u -> v, vertex u appears before v in the ordering. It's widely used in scenarios where tasks need to be performed in a specific sequence.
+
+Example:
+Consider a graph with the following directed edges:
+
+A -> B
+A -> C
+B -> D
+C -> D
+The topological sort of this graph would be A -> B -> C -> D or A -> C -> B -> D, where A appears before B and C, and both B and C appear before D. This order respects the dependencies implied by the edges.
+
+Key Points:
+DAG Requirement: Topological sorting is only possible for DAGs (graphs with no cycles).
+//
+
+
+
+
+
+
+
 #include <vector>
 #include <stack>
 
