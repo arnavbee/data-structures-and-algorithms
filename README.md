@@ -1,5 +1,5 @@
 # Table Of Contents
-- [Arrays](https://github.com/arnavbee/data-structures-and-algorithms?tab=readme-ov-file#arrays)
+- [Arrays](arrays/)
 - [Dynamic Programming](dynamic-programming/)
 - [Graphs](graphs/)
 - [Queue](queue/)
