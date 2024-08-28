@@ -1,3 +1,10 @@
+# Table Of Contents
+- [Arrays](arrays/)
+- [Dynamic Programming](dynamic-programming/)
+- [Graphs](graphs/)
+- [Queue](queue/)
+- [Stack](stack/)
+
 
 # [Arrays](arrays/)
 - [Best Time to Buy and Sell Stocks](arrays/best-time-to-buy-and-sell-stocks.cpp)
