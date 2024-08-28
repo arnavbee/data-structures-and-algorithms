@@ -6,7 +6,7 @@
 - [Stack](stack/)
 
 
-# [Arrays](arrays/)
+# Arrays [🔗](arrays/)
 - [Best Time to Buy and Sell Stocks](arrays/best-time-to-buy-and-sell-stocks.cpp)
 - [Contains Duplicate](arrays/contains-duplicate.cpp)
 - [Longest Consequence](arrays/longest-consequence.cpp)
