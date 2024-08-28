@@ -1,2 +1,2 @@
 
-- #[Arrays](arrays/)
+# [Arrays](arrays/)
