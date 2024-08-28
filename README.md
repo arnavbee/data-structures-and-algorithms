@@ -12,7 +12,7 @@
 - [Longest Consequence](arrays/longest-consequence.cpp)
 - [Maximum Product Subarray](arrays/maximum-product-subarray.cpp)
 
-# [Dynamic Programming](dynamic-programming/)
+# Dynamic Programming [🔗](dynamic-programming/)
 - [Fibonacci](dynamic-programming/01-Fibonacci.cpp)
 - [Climbing Stars](dynamic-programming/02-ClimbingStairs.cpp)
 - [House Robber](dynamic-programming/03-HouseRobber.cpp)
@@ -22,7 +22,7 @@
 - [Minimum Path Sum](dynamic-programming/07-MinimumPathSum.cpp)
 - [Word Break](dynamic-programming/WordBreak.cpp)
 
-# [Graphs](graphs/)
+# Graphs [🔗](graphs/)
 - [BFS](graphs/BFS.cpp)
 - [DFS](graphs/DFS.cpp)
 - [Bellman Ford](graphs/BellmanFord.cpp)
@@ -46,13 +46,13 @@
 - [Topological Sort DFS](graphs/TopologicalSortDFS.cpp)
 
 
-# [Queue](queue/)
+# Queue [🔗](queue/)
 - [Queue Intro](queue/queueintro.cpp)
 - [Queue Implementation](queue/queue-implementation.cpp)
 - [Stack using Queue](queue/stack-using-queue.cpp)
 
 
-# [Stack](stack/)
+# Stack [🔗](stack/)
 - [Stack Intro](stack/stackintro.cpp)
 - [Stack Implementation](stack/stack-implementation.cpp)
 - [Valid Parenthesis](stack/valid-parenthesis.cpp)
