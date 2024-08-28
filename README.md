@@ -40,4 +40,14 @@
 
 
 # [Queue](queue/)
+- [Queue Intro](queue/queueintro.cpp)
+- [Queue Implementation](queue/queue-implementation.cpp)
+- [Stack using Queue](queue/stack-using-queue.cpp)
+
+
 # [Stack](stack/)
+- [Stack Intro](stack/stackintro.cpp)
+- [Stack Implementation](stack/stack-implementation.cpp)
+- [Valid Parenthesis](stack/valid-parenthesis.cpp)
+- [Minimum Stack](stack/Minimum-Stack.cpp)
+- [LRU-Cache](stack/LRU-Cache.cpp)
