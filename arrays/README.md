@@ -138,44 +138,70 @@ The maximum length of a substring without repeating characters is 5, correspondi
 Let's do a dry run of the code using the array [4, 2, 2, 6, 4] with k = 6.
 
 Initial State:
+
 a = [4, 2, 2, 6, 4]
+
 k = 6
+
 xr = 0 (initial XOR value)
+
 mpp = {0: 1} (map initialized with {0: 1})
+
 cnt = 0 (initial count of subarrays with XOR equal to k)
 
 - Iteration 1 (i = 0, a[0] = 4):
+
 xr = xr ^ a[0] = 0 ^ 4 = 4
+
 x = xr ^ k = 4 ^ 6 = 2
+
 mpp[2] is not in the map, so cnt remains 0.
+
 mpp[xr] = mpp[4]++ => mpp = {0: 1, 4: 1}
 
 
 - Iteration 2 (i = 1, a[1] = 2):
 
 xr = xr ^ a[1] = 4 ^ 2 = 6
+
 x = xr ^ k = 6 ^ 6 = 0
+
 mpp[0] = 1, so cnt = cnt + mpp[0] = 0 + 1 = 1
+
 mpp[xr] = mpp[6]++ => mpp = {0: 1, 4: 1, 6: 1}
 
 - Iteration 3 (i = 2, a[2] = 2):
+
 xr = xr ^ a[2] = 6 ^ 2 = 4
+
 x = xr ^ k = 4 ^ 6 = 2
+
 mpp[2] is not in the map, so cnt remains 1.
+
 mpp[xr] = mpp[4]++ => mpp = {0: 1, 4: 2, 6: 1}
 
 
 - Iteration 4 (i = 3, a[3] = 6):
+
 xr = xr ^ a[3] = 4 ^ 6 = 2
+
 x = xr ^ k = 2 ^ 6 = 4
+
 mpp[4] = 2, so cnt = cnt + mpp[4] = 1 + 2 = 3
+
 mpp[xr] = mpp[2]++ => mpp = {0: 1, 4: 2, 6: 1, 2: 1}
 
+
 - Iteration 5 (i = 4, a[4] = 4):
+
 xr = xr ^ a[4] = 2 ^ 4 = 6
+
 x = xr ^ k = 6 ^ 6 = 0
+
 mpp[0] = 1, so cnt = cnt + mpp[0] = 3 + 1 = 4
+
 mpp[xr] = mpp[6]++ => mpp = {0: 1, 4: 2, 6: 2, 2: 1}
+
 
 - Final Result:
 After processing the entire array, the final value of cnt is 4.
