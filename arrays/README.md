@@ -131,3 +131,128 @@ Final Result:
 The maximum length of a substring without repeating characters is 5, corresponding to the substring "cadbz".
 
 
+## No. of subarrays with given XOR as "k"
+
+Let's do a dry run of the code using the array [4, 2, 2, 6, 4] with k = 6.
+
+Initial State:
+a = [4, 2, 2, 6, 4]
+k = 6
+xr = 0 (initial XOR value)
+mpp = {0: 1} (map initialized with {0: 1})
+cnt = 0 (initial count of subarrays with XOR equal to k)
+
+Iteration 1 (i = 0, a[0] = 4):
+
+Compute xr:
+
+xr = xr ^ a[0] = 0 ^ 4 = 4
+
+Calculate x:
+
+x = xr ^ k = 4 ^ 6 = 2
+
+Update cnt:
+
+mpp[2] is not in the map, so cnt remains 0.
+
+Update the map:
+
+mpp[xr] = mpp[4]++ => mpp = {0: 1, 4: 1}
+
+
+Iteration 2 (i = 1, a[1] = 2):
+
+Compute xr:
+
+xr = xr ^ a[1] = 4 ^ 2 = 6
+
+Calculate x:
+
+x = xr ^ k = 6 ^ 6 = 0
+
+Update cnt:
+
+mpp[0] = 1, so cnt = cnt + mpp[0] = 0 + 1 = 1
+
+Update the map:
+
+mpp[xr] = mpp[6]++ => mpp = {0: 1, 4: 1, 6: 1}
+
+
+
+Iteration 3 (i = 2, a[2] = 2):
+
+Compute xr:
+
+xr = xr ^ a[2] = 6 ^ 2 = 4
+
+Calculate x:
+
+x = xr ^ k = 4 ^ 6 = 2
+
+Update cnt:
+
+mpp[2] is not in the map, so cnt remains 1.
+
+Update the map:
+
+mpp[xr] = mpp[4]++ => mpp = {0: 1, 4: 2, 6: 1}
+
+
+
+Iteration 4 (i = 3, a[3] = 6):
+
+Compute xr:
+
+xr = xr ^ a[3] = 4 ^ 6 = 2
+
+Calculate x:
+
+x = xr ^ k = 2 ^ 6 = 4
+
+Update cnt:
+
+mpp[4] = 2, so cnt = cnt + mpp[4] = 1 + 2 = 3
+
+Update the map:
+
+mpp[xr] = mpp[2]++ => mpp = {0: 1, 4: 2, 6: 1, 2: 1}
+
+
+
+Iteration 5 (i = 4, a[4] = 4):
+
+Compute xr:
+
+xr = xr ^ a[4] = 2 ^ 4 = 6
+
+Calculate x:
+
+x = xr ^ k = 6 ^ 6 = 0
+
+Update cnt:
+
+mpp[0] = 1, so cnt = cnt + mpp[0] = 3 + 1 = 4
+
+Update the map:
+
+mpp[xr] = mpp[6]++ => mpp = {0: 1, 4: 2, 6: 2, 2: 1}
+
+Final Result:
+After processing the entire array, the final value of cnt is 4.
+Answer: There are 4 subarrays with XOR equal to k = 6.
+
+Subarrays:
+[4, 2] (XOR = 6)
+[2, 2, 6] (XOR = 6)
+[6] (XOR = 6)
+[4, 2, 2, 6] (XOR = 6)
+
+Thus, the function correctly counts 4 subarrays with an XOR sum of 6.
+
+
+
+
+
+
