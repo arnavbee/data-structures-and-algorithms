@@ -102,7 +102,7 @@ No more duplicates, add 'a' to set: set = {'d', 'b', 'z', 'a'}.
 maxans remains 5.
 Move j to 6.
 
-Iteration 7 (j = 6):
+Iteration 7 (j = 6)
 Character: 'b'
 'b' is in set (duplicate found), so:
 Shrink the window by removing 'd' from the set: set = {'b', 'z', 'a'}
@@ -113,14 +113,14 @@ No more duplicates, add 'b' to set: set = {'z', 'a', 'b'}.
 maxans remains 5.
 Move j to 7.
 
-Iteration 8 (j = 7):
+Iteration 8 (j = 7)
 Character: 'c'
 'c' is not in set, so:
 Add 'c' to set: set = {'z', 'a', 'b', 'c'}
 Update maxans = max(5, 7 - 4 + 1) = 5
 Move j to 8.
 
-Iteration 9 (j = 8):
+Iteration 9 (j = 8)
 Character: 'd'
 'd' is not in set, so:
 Add 'd' to set: set = {'z', 'a', 'b', 'c', 'd'}
@@ -128,10 +128,12 @@ Update maxans = max(5, 8 - 4 + 1) = 5
 j reaches the end of the string.
 
 Final Result:
+
 The maximum length of a substring without repeating characters is 5, corresponding to the substring "cadbz".
 
 
-## No. of subarrays with given XOR as "k"
+
+## 4.No. of subarrays with given XOR as "k"
 
 Let's do a dry run of the code using the array [4, 2, 2, 6, 4] with k = 6.
 
