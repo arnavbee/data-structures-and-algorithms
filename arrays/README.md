@@ -56,42 +56,42 @@ i = 0
 j = 0
 maxans = 0
 
-Iteration 1 (j = 0):
+- Iteration 1 (j = 0):
 Character: 'c'
 'c' is not in set, so:
 Add 'c' to set: set = {'c'}
 Update maxans = max(0, 0 - 0 + 1) = 1
 Move j to 1
 
-Iteration 2 (j = 1):
+- Iteration 2 (j = 1):
 Character: 'a'
 'a' is not in set, so:
 Add 'a' to set: set = {'c', 'a'}
 Update maxans = max(1, 1 - 0 + 1) = 2
 Move j to 2
 
-Iteration 3 (j = 2):
+- Iteration 3 (j = 2):
 Character: 'd'
 'd' is not in set, so:
 Add 'd' to set: set = {'c', 'a', 'd'}
 Update maxans = max(2, 2 - 0 + 1) = 3
 Move j to 3
 
-Iteration 4 (j = 3):
+- Iteration 4 (j = 3):
 Character: 'b'
 'b' is not in set, so:
 Add 'b' to set: set = {'c', 'a', 'd', 'b'}
 Update maxans = max(3, 3 - 0 + 1) = 4
 Move j to 4
 
-Iteration 5 (j = 4):
+- Iteration 5 (j = 4):
 Character: 'z'
 'z' is not in set, so:
 Add 'z' to set: set = {'c', 'a', 'd', 'b', 'z'}
 Update maxans = max(4, 4 - 0 + 1) = 5
 Move j to 5
 
-Iteration 6 (j = 5):
+- Iteration 6 (j = 5):
 Character: 'a'
 'a' is in set (duplicate found), so:
 Shrink the window by removing the character at i = 0 (which is 'c') from the set: set = {'a', 'd', 'b', 'z'}
@@ -102,7 +102,7 @@ No more duplicates, add 'a' to set: set = {'d', 'b', 'z', 'a'}.
 maxans remains 5.
 Move j to 6.
 
-Iteration 7 (j = 6)
+- Iteration 7 (j = 6)
 Character: 'b'
 'b' is in set (duplicate found), so:
 Shrink the window by removing 'd' from the set: set = {'b', 'z', 'a'}
@@ -113,27 +113,27 @@ No more duplicates, add 'b' to set: set = {'z', 'a', 'b'}.
 maxans remains 5.
 Move j to 7.
 
-Iteration 8 (j = 7)
+- Iteration 8 (j = 7)
 Character: 'c'
 'c' is not in set, so:
 Add 'c' to set: set = {'z', 'a', 'b', 'c'}
 Update maxans = max(5, 7 - 4 + 1) = 5
 Move j to 8.
 
-Iteration 9 (j = 8)
+- Iteration 9 (j = 8)
 Character: 'd'
 'd' is not in set, so:
 Add 'd' to set: set = {'z', 'a', 'b', 'c', 'd'}
 Update maxans = max(5, 8 - 4 + 1) = 5
 j reaches the end of the string.
 
-Final Result:
+- Final Result:
 
 The maximum length of a substring without repeating characters is 5, corresponding to the substring "cadbz".
 
 
 
-## 4.No. of subarrays with given XOR as "k"
+## 4. No. of subarrays with given XOR as "k"
 
 Let's do a dry run of the code using the array [4, 2, 2, 6, 4] with k = 6.
 
@@ -144,7 +144,7 @@ xr = 0 (initial XOR value)
 mpp = {0: 1} (map initialized with {0: 1})
 cnt = 0 (initial count of subarrays with XOR equal to k)
 
-Iteration 1 (i = 0, a[0] = 4):
+- Iteration 1 (i = 0, a[0] = 4):
 
 Compute xr:
 
@@ -163,7 +163,7 @@ Update the map:
 mpp[xr] = mpp[4]++ => mpp = {0: 1, 4: 1}
 
 
-Iteration 2 (i = 1, a[1] = 2):
+- Iteration 2 (i = 1, a[1] = 2):
 
 Compute xr:
 
@@ -183,7 +183,7 @@ mpp[xr] = mpp[6]++ => mpp = {0: 1, 4: 1, 6: 1}
 
 
 
-Iteration 3 (i = 2, a[2] = 2):
+- Iteration 3 (i = 2, a[2] = 2):
 
 Compute xr:
 
@@ -203,7 +203,7 @@ mpp[xr] = mpp[4]++ => mpp = {0: 1, 4: 2, 6: 1}
 
 
 
-Iteration 4 (i = 3, a[3] = 6):
+- Iteration 4 (i = 3, a[3] = 6):
 
 Compute xr:
 
@@ -223,7 +223,7 @@ mpp[xr] = mpp[2]++ => mpp = {0: 1, 4: 2, 6: 1, 2: 1}
 
 
 
-Iteration 5 (i = 4, a[4] = 4):
+- Iteration 5 (i = 4, a[4] = 4):
 
 Compute xr:
 
@@ -241,7 +241,7 @@ Update the map:
 
 mpp[xr] = mpp[6]++ => mpp = {0: 1, 4: 2, 6: 2, 2: 1}
 
-Final Result:
+- Final Result:
 After processing the entire array, the final value of cnt is 4.
 Answer: There are 4 subarrays with XOR equal to k = 6.
 
