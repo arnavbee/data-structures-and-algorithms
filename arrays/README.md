@@ -192,7 +192,7 @@ mpp[4] = 2, so cnt = cnt + mpp[4] = 1 + 2 = 3
 mpp[xr] = mpp[2]++ => mpp = {0: 1, 4: 2, 6: 1, 2: 1}
 
 
-- Iteration 5 (i = 4, a[4] = 4):
+### Iteration 5 (i = 4, a[4] = 4):
 
 xr = xr ^ a[4] = 2 ^ 4 = 6
 
