@@ -131,7 +131,7 @@ j reaches the end of the string.
 
 The maximum length of a substring without repeating characters is 5, corresponding to the substring "cadbz".
 
-
+---
 
 ## 4. No. of subarrays with given XOR as "k"
 
