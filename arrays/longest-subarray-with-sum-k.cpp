@@ -35,7 +35,11 @@ int longestSubarrayWithSumK(std::vector<int> a, long long k) {
 }
 
 
-# Optimal Solution 
+
+
+/// Optimal Solution 
+
+
 
 int longestSubarrayWithSumK(vector<int> a, long long k) {
     // Initialize two pointers: left and right, both starting at the beginning of the array
