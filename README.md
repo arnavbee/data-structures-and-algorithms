@@ -65,8 +65,8 @@
 - [LRU-Cache](stack/LRU-Cache.cpp)
 
 
-# Linked List [🔗](linked list/)
-- [Add Two Numbers](linked list/add-two-numbers.cpp)
+# Linked List [🔗](linked-list/)
+- [Add Two Numbers](linked-list/add-two-numbers.cpp)
 
 
 
