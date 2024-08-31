@@ -76,5 +76,55 @@ This dry run shows how dummyNode->next points to the head of the final linked li
 
 ---
 
+## 2. Flattening a List
+
+
+
+---
+
+## 3. Rotate a List
+
+Initial Setup:
+
+Input Linked List: 1 -> 2 -> 3 -> 4 -> 5
+k: 2
+
+Step-by-Step Execution:
+
+Calculate the Length of the List:
+
+Start with len = 1 and tail = head (initially pointing to 1).
+Traverse through the list to find the tail and calculate the length.
+Move tail to 2, len = 2.
+Move tail to 3, len = 3.
+Move tail to 4, len = 4.
+Move tail to 5, len = 5.
+Now, tail is pointing to 5 and len = 5.
+
+Adjust k:
+
+k = k % len = 2 % 5 = 2.
+Since k is not 0, proceed with the rotation.
+Make the List Circular:
+
+Connect the tail (node 5) to the head (node 1), making the list circular:
+The list now looks like: 1 -> 2 -> 3 -> 4 -> 5 -> 1 -> ... (circular).
+Find the New Tail:
+
+We need to find the (len - k)th node, which is the 3rd node (5 - 2 = 3).
+Call findNthNode(head, 3):
+Start from head (node 1) and traverse:
+Move to node 2 (cnt = 2).
+Move to node 3 (cnt = 3).
+Return node 3 as the new tail (newLastNode).
+Set the New Head and Break the Circular Link:
+
+The new head will be the node after newLastNode (3), which is node 4.
+Break the circular link by setting newLastNode->next = NULL:
+Node 3's next pointer (previously pointing to 4) is set to NULL.
+
+The rotated list becomes 4 -> 5 -> 1 -> 2 -> 3.
+Final Output:
+Rotated List: 4 -> 5 -> 1 -> 2 -> 3.
 
 
