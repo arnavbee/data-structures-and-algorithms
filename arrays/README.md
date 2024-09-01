@@ -217,6 +217,113 @@ Subarrays:
 Thus, the function correctly counts 4 subarrays with an XOR sum of 6.
 
 
+## 5. Trapping Rainwater
+
+Initial Setup:
+Array: [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]
+Pointers: left = 0, right = 11
+Max Values: left_max = 0, right_max = 0
+Trapped Water: water = 0
+Step-by-Step Dry Run:
+
+First Move:
+
+Comparison: height[left] (0) < height[right] (1)
+Action: Since height[left] < height[right], calculate water trapped at left.
+Water Trapped: left_max - height[left] = 0 - 0 = 0
+Update left_max: left_max = max(0, 0) = 0
+Move: Increment left to 1.
+
+Second Move:
+
+Comparison: height[left] (1) < height[right] (1)
+Action: Again, height[left] is less than or equal to height[right], so calculate water trapped at left.
+Water Trapped: left_max - height[left] = 0 - 1 = 0
+Update left_max: left_max = max(0, 1) = 1
+Move: Increment left to 2.
+
+Third Move:
+
+Comparison: height[left] (0) < height[right] (1)
+Action: Calculate water trapped at left.
+Water Trapped: left_max - height[left] = 1 - 0 = 1
+Update left_max: left_max = max(1, 0) = 1
+Trapped Water So Far: water = 1
+Move: Increment left to 3.
+
+Fourth Move:
+
+Comparison: height[left] (2) > height[right] (1)
+Action: Since height[left] > height[right], calculate water trapped at right.
+Water Trapped: right_max - height[right] = 0 - 1 = 0
+Update right_max: right_max = max(0, 1) = 1
+Move: Decrement right to 10.
+
+Fifth Move:
+
+Comparison: height[left] (2) > height[right] (2)
+Action: Calculate water trapped at right.
+Water Trapped: right_max - height[right] = 1 - 2 = 0
+Update right_max: right_max = max(1, 2) = 2
+Move: Decrement right to 9.
+
+Sixth Move:
+
+Comparison: height[left] (2) > height[right] (1)
+Action: Calculate water trapped at right.
+Water Trapped: right_max - height[right] = 2 - 1 = 1
+Update right_max: right_max = max(2, 1) = 2
+Trapped Water So Far: water = 2
+Move: Decrement right to 8.
+
+Seventh Move:
+
+Comparison: height[left] (2) > height[right] (2)
+Action: Calculate water trapped at right.
+Water Trapped: right_max - height[right] = 2 - 2 = 0
+Update right_max: right_max = max(2, 2) = 2
+Move: Decrement right to 7.
+
+Eighth Move:
+
+Comparison: height[left] (2) < height[right] (3)
+Action: Calculate water trapped at left.
+Water Trapped: left_max - height[left] = 1 - 2 = 0
+Update left_max: left_max = max(1, 2) = 2
+Move: Increment left to 4.
+
+Ninth Move:
+
+Comparison: height[left] (1) < height[right] (3)
+Action: Calculate water trapped at left.
+Water Trapped: left_max - height[left] = 2 - 1 = 1
+Update left_max: left_max = max(2, 1) = 2
+Trapped Water So Far: water = 3
+Move: Increment left to 5.
+Tenth Move:
+
+Comparison: height[left] (0) < height[right] (3)
+Action: Calculate water trapped at left.
+Water Trapped: left_max - height[left] = 2 - 0 = 2
+Update left_max: left_max = max(2, 0) = 2
+Trapped Water So Far: water = 5
+Move: Increment left to 6.
+Eleventh Move:
+
+Comparison: height[left] (1) < height[right] (3)
+Action: Calculate water trapped at left.
+Water Trapped: left_max - height[left] = 2 - 1 = 1
+Update left_max: left_max = max(2, 1) = 2
+Trapped Water So Far: water = 6
+Move: Increment left to 7.
+Termination:
+
+Now left = 7 and right = 7, so the loop ends.
+Final Trapped Water:
+The total water trapped is 6 units.
+
+---
+
 
 
 
