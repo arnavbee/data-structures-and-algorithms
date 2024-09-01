@@ -127,4 +127,23 @@ The rotated list becomes 4 -> 5 -> 1 -> 2 -> 3.
 Final Output:
 Rotated List: 4 -> 5 -> 1 -> 2 -> 3.
 
+---
+
+## 4. Clone List with Random Pointer
+
+The line copyNode->random = temp->random->next; is used because the copyNode is supposed to point to the copied version of the node that temp->random points to, not to the original node itself.
+
+Original Setup:
+
+Let's assume temp is currently pointing to an original node.
+temp->random points to some other original node in the list.
+
+After Insertion of Copies:
+
+Every original node is followed by its corresponding copy. 
+
+Original List: 1 -> 2 -> 3 -> NULL
+After inserting copies: 1 -> 1' -> 2 -> 2' -> 3 -> 3' -> NULL
+Now, temp->random->next is the copied version of the node that temp->random points to.
+
 
