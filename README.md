@@ -28,7 +28,7 @@
 - [Word Break](dynamic-programming/WordBreak.cpp)
 
 # Graphs [🔗](graphs/)
-- [BFS](graphs/BFS.cpp)
+- [BFS](graphs/BFS.cpp) [🔗](https://www.geeksforgeeks.org/problems/bfs-traversal-of-graph/1)
 - [DFS](graphs/DFS.cpp) [🔗](https://www.geeksforgeeks.org/problems/depth-first-traversal-for-a-graph/1)
 - [Bellman Ford](graphs/BellmanFord.cpp)
 - [Bipartite BFS](graphs/BipartiteBFS.cpp)
