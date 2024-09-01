@@ -29,7 +29,7 @@
 
 # Graphs [🔗](graphs/)
 - [BFS](graphs/BFS.cpp)
-- [DFS](graphs/DFS.cpp)
+- [DFS](graphs/DFS.cpp)[🔗](https://www.geeksforgeeks.org/problems/depth-first-traversal-for-a-graph/1)
 - [Bellman Ford](graphs/BellmanFord.cpp)
 - [Bipartite BFS](graphs/BipartiteBFS.cpp)
 - [Bipartite DFS](graphs/BipartiteDFS.cpp)
