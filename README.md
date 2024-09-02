@@ -16,6 +16,7 @@
 - [Inversion of Array](arrays/inversion-of-array.cpp)
 - [Find Missing Repeating Number](arrays/find-missing-repeating-number.cpp)
 - [Container With Most Water](arrays/container-with-most-water.cpp)
+- [Find All Duplicates in an Array](arrays/find-all-duplicates.cpp)
 
 # Dynamic Programming [🔗](dynamic-programming/)
 - [Fibonacci](dynamic-programming/01-Fibonacci.cpp)
