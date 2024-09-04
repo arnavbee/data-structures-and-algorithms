@@ -1,5 +1,6 @@
 static bool comp(Item val1, Item val2) {
         return (double(val1.value) / val1.weight) > (double(val2.value) / val2.weight);
+    
     }
     
 double fractionalKnapsack(int w, Item arr[], int n) {
