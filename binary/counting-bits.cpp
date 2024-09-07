@@ -2,7 +2,6 @@
 
         if(n == 0)
         return result;
-
         result[0] = 0;
 
         for(int i = 0; i <=n; i++){
